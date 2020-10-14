@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test NG Framework">
+  <test name="Test Sanity">
+    <classes>
+      <class name="com.shoaib.testng.InvocationCountConcept"/>
+      <class name="com.shoaib.testng.AssertConcept"/>
+      <class name="com.shoaib.testng.ExceptionTimeoutConcept"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

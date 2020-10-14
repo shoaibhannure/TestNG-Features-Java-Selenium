@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="19" passed="18">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test NG Framework" duration-ms="29323" started-at="2020-10-14T19:41:12Z" finished-at="2020-10-14T19:41:41Z">
+    <groups>
+      <group name="Title">
+        <method signature="AssertConcept.googleTitleTest()[pri:2, instance:com.shoaib.testng.AssertConcept@2f7c7260]" name="googleTitleTest" class="com.shoaib.testng.AssertConcept"/>
+      </group> <!-- Title -->
+      <group name="Logo">
+        <method signature="AssertConcept.googleLogoTest()[pri:1, instance:com.shoaib.testng.AssertConcept@2f7c7260]" name="googleLogoTest" class="com.shoaib.testng.AssertConcept"/>
+      </group> <!-- Logo -->
+    </groups>
+    <test name="Test Sanity" duration-ms="29323" started-at="2020-10-14T19:41:12Z" finished-at="2020-10-14T19:41:41Z">
+      <class name="com.shoaib.testng.ExceptionTimeoutConcept">
+        <test-method status="PASS" signature="handleException()[pri:0, instance:com.shoaib.testng.ExceptionTimeoutConcept@2d209079]" name="handleException" duration-ms="0" started-at="2020-10-15T01:11:41Z" finished-at="2020-10-15T01:11:41Z">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "200A"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "200A"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.shoaib.testng.ExceptionTimeoutConcept.handleException(ExceptionTimeoutConcept.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleException -->
+        <test-method status="FAIL" signature="infiniteloop()[pri:0, instance:com.shoaib.testng.ExceptionTimeoutConcept@2d209079]" name="infiniteloop" duration-ms="6" started-at="2020-10-15T01:11:41Z" finished-at="2020-10-15T01:11:41Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method org.testng.internal.TestNGMethod.infiniteloop() didn't finish within the time-out 2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.infiniteloop() didn't finish within the time-out 2
+	at java.lang.System.arraycopy(Native Method)
+	at java.io.BufferedOutputStream.write(Unknown Source)
+	at java.io.PrintStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flushBuffer(Unknown Source)
+	at java.io.OutputStreamWriter.flushBuffer(Unknown Source)
+	at java.io.PrintStream.newLine(Unknown Source)
+	at java.io.PrintStream.println(Unknown Source)
+	at com.shoaib.testng.ExceptionTimeoutConcept.infiniteloop(ExceptionTimeoutConcept.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- infiniteloop -->
+      </class> <!-- com.shoaib.testng.ExceptionTimeoutConcept -->
+      <class name="com.shoaib.testng.AssertConcept">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.shoaib.testng.AssertConcept@2f7c7260]" name="setUp" is-config="true" duration-ms="17820" started-at="2020-10-15T01:11:12Z" finished-at="2020-10-15T01:11:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="googleLogoTest()[pri:1, instance:com.shoaib.testng.AssertConcept@2f7c7260]" name="googleLogoTest" duration-ms="82" started-at="2020-10-15T01:11:29Z" finished-at="2020-10-15T01:11:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleLogoTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.shoaib.testng.AssertConcept@2f7c7260]" name="setUp" is-config="true" duration-ms="11367" started-at="2020-10-15T01:11:29Z" finished-at="2020-10-15T01:11:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="googleTitleTest()[pri:2, instance:com.shoaib.testng.AssertConcept@2f7c7260]" name="googleTitleTest" duration-ms="9" started-at="2020-10-15T01:11:41Z" finished-at="2020-10-15T01:11:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleTitleTest -->
+      </class> <!-- com.shoaib.testng.AssertConcept -->
+      <class name="com.shoaib.testng.InvocationCountConcept">
+        <test-method status="PASS" signature="substractionb()[pri:0, instance:com.shoaib.testng.InvocationCountConcept@1b0375b3]" name="substractionb" duration-ms="9" started-at="2020-10-15T01:11:12Z" finished-at="2020-10-15T01:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- substractionb -->
+        <test-method status="PASS" signature="substractionb()[pri:0, instance:com.shoaib.testng.InvocationCountConcept@1b0375b3]" name="substractionb" duration-ms="0" started-at="2020-10-15T01:11:12Z" finished-at="2020-10-15T01:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- substractionb -->
+        <test-method status="PASS" signature="substractionb()[pri:0, instance:com.shoaib.testng.InvocationCountConcept@1b0375b3]" name="substractionb" duration-ms="0" started-at="2020-10-15T01:11:12Z" finished-at="2020-10-15T01:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- substractionb -->
+        <test-method status="PASS" signature="substractionb()[pri:0, instance:com.shoaib.testng.InvocationCountConcept@1b0375b3]" name="substractionb" duration-ms="1" started-at="2020-10-15T01:11:12Z" finished-at="2020-10-15T01:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- substractionb -->
+        <test-method status="PASS" signature="substractionb()[pri:0, instance:com.shoaib.testng.InvocationCountConcept@1b0375b3]" name="substractionb" duration-ms="0" started-at="2020-10-15T01:11:12Z" finished-at="2020-10-15T01:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- substractionb -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.shoaib.testng.InvocationCountConcept@1b0375b3]" name="sum" duration-ms="1" started-at="2020-10-15T01:11:12Z" finished-at="2020-10-15T01:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.shoaib.testng.InvocationCountConcept@1b0375b3]" name="sum" duration-ms="1" started-at="2020-10-15T01:11:12Z" finished-at="2020-10-15T01:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.shoaib.testng.InvocationCountConcept@1b0375b3]" name="sum" duration-ms="1" started-at="2020-10-15T01:11:12Z" finished-at="2020-10-15T01:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.shoaib.testng.InvocationCountConcept@1b0375b3]" name="sum" duration-ms="1" started-at="2020-10-15T01:11:12Z" finished-at="2020-10-15T01:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.shoaib.testng.InvocationCountConcept@1b0375b3]" name="sum" duration-ms="1" started-at="2020-10-15T01:11:12Z" finished-at="2020-10-15T01:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.shoaib.testng.InvocationCountConcept@1b0375b3]" name="sum" duration-ms="1" started-at="2020-10-15T01:11:12Z" finished-at="2020-10-15T01:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.shoaib.testng.InvocationCountConcept@1b0375b3]" name="sum" duration-ms="1" started-at="2020-10-15T01:11:12Z" finished-at="2020-10-15T01:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.shoaib.testng.InvocationCountConcept@1b0375b3]" name="sum" duration-ms="1" started-at="2020-10-15T01:11:12Z" finished-at="2020-10-15T01:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.shoaib.testng.InvocationCountConcept@1b0375b3]" name="sum" duration-ms="0" started-at="2020-10-15T01:11:12Z" finished-at="2020-10-15T01:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.shoaib.testng.InvocationCountConcept@1b0375b3]" name="sum" duration-ms="0" started-at="2020-10-15T01:11:12Z" finished-at="2020-10-15T01:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+      </class> <!-- com.shoaib.testng.InvocationCountConcept -->
+    </test> <!-- Test Sanity -->
+  </suite> <!-- Test NG Framework -->
+</testng-results>

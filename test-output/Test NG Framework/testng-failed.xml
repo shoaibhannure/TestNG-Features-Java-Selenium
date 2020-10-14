@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test NG Framework]">
+  <test name="Test Sanity">
+    <classes>
+      <class name="com.shoaib.testng.InvocationCountConcept"/>
+      <class name="com.shoaib.testng.AssertConcept"/>
+      <class name="com.shoaib.testng.ExceptionTimeoutConcept"/>
+    </classes>
+  </test> <!-- Test Sanity -->
+  <test name="Test Sanity(failed)">
+    <classes>
+      <class name="com.shoaib.testng.AssertConcept">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.shoaib.testng.AssertConcept -->
+      <class name="com.shoaib.testng.ExceptionTimeoutConcept">
+        <methods>
+          <include name="infiniteloop"/>
+        </methods>
+      </class> <!-- com.shoaib.testng.ExceptionTimeoutConcept -->
+    </classes>
+  </test> <!-- Test Sanity(failed) -->
+</suite> <!-- Failed suite [Test NG Framework] -->
